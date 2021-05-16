@@ -1,3 +1,7 @@
+/* Autor: Evert Barros Tavares
+ * Data: 15/05/2021
+ * Descrição: Sistema que permita o cadastro de anúncios e fornecerá os relatórios de cada anúncio. */
+
 package SistemaDeAnuncios;
 
 import java.text.SimpleDateFormat;
@@ -9,6 +13,7 @@ class Main {
 	
 	// Variáveis globais e instancia de objetos e classes.
 	public static Scanner leia = new Scanner(System.in);
+	public static Scanner leiaString = new Scanner(System.in);
 	public static ArrayList<Anuncio> listaAnuncio = new ArrayList<>();
 	public static Anuncio anuncio;
 
@@ -66,13 +71,13 @@ class Main {
 		// Solicitando dados ao usuário 
 		System.out.println("\n-- Cadastro --");
 		System.out.println("Informe o nome do anúncio: ");
-		nomeAnuncio = leia.next();
+		nomeAnuncio = leiaString.nextLine();
 		System.out.println("Informe qual o cliente: ");
-		cliente = leia.next();
+		cliente = leiaString.nextLine();
 		System.out.println("Informe qual a data de início das publicações no formato - dd/mm/aaaa: ");
-		inicio = leia.next();
+		inicio = leiaString.nextLine();;
 		System.out.println("Informe qual a data do termino das publicações no formato - dd/mm/aaaa: ");
-		termino = leia.next();
+		termino = leiaString.nextLine();;
 		System.out.println("Informe qual valor vai investir por dia: ");
 		investimentoPorDia = leia.nextDouble();
 		
@@ -132,7 +137,7 @@ class Main {
 		// Solicitando dados ao usuário 
 		System.out.println("\n-- Filtro --");
 		System.out.println("Digite o nome do cliente que deseja pesquisar: ");
-		nomeCliente = leia.next();
+		nomeCliente = leiaString.nextLine();
 		System.out.println("Informe qual a data de início deseja pesquisar no formato - dd/mm/aaaa: ");
 		inicio = leia.next();
 		System.out.println("Informe qual a data do termino deseja pesquisar no formato - dd/mm/aaaa: ");
