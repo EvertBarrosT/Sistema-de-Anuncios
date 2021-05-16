@@ -17,7 +17,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Funcionalidades da Aplicação](#funcionalidades-da-aplicação)
-   * [Pre-Requisitos](#pré-requisitos)
+   * [Pré-Requisitos](#pré-requisitos)
    * [Compilando e Executando o Programa](#compilando-e-executando-o-programa)
    * [Instruções de Utilização](#instruções-de-utilização)
    * [Ferramentas](#ferramentas)
@@ -30,7 +30,7 @@ Tabela de conteúdos
   * Fornece relatórios
   * Filtra relatórios por intervalo de tempo e cliente
 
-## Pré-requisitos
+## Pré-Requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 - [Eclipse](https://www.eclipse.org/downloads/) (ou uma IDE de sua preferência) 
