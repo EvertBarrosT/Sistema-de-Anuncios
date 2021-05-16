@@ -9,8 +9,8 @@ class Anuncio {
 	private String nomeAnuncio, cliente;
 	private Date dataInicio, dataTermino;
 	private double invetimentoPorDia, totalInvestimento; 
-	private int totalVisualizacao, totalCliques, totalCompartilhamento, totalDias, filtroDiaInicio, filtroDiaTermino, filtroMesInicio, filtroMesTermino, filtroAnoInicio, filtroAnoTermino, filtroDataInicio, filtroDataTermino, verificadorDataInicio, verificadorDataTermino;
-	
+	private int totalDias, filtroDiaInicio, filtroDiaTermino, filtroMesInicio, filtroMesTermino, filtroAnoInicio, filtroAnoTermino, filtroDataInicio, filtroDataTermino, verificadorDataInicio, verificadorDataTermino;
+	private long totalVisualizacao, totalCliques, totalCompartilhamento;
 	// Criando o construtor da classe. 
 	public Anuncio(String nomeAnuncio, String cliente, Date inicio, Date termino, double investimentoPorDia) {
 		
@@ -232,17 +232,17 @@ class Anuncio {
 	}
 
 
-	public int getTotalVisualizacao() {
+	public long getTotalVisualizacao() {
 		return this.totalVisualizacao;
 	}
 
 
-	public int getTotalCliques() {
+	public long getTotalCliques() {
 		return this.totalCliques;
 	}
 
 
-	public int getTotalCompartilhamento() {
+	public long getTotalCompartilhamento() {
 		return this.totalCompartilhamento;
 	}
 

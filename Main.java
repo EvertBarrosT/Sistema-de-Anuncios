@@ -18,14 +18,15 @@ class Main {
 	public static Anuncio anuncio;
 
 	public static void main(String[] args) {
-		
-		// Chamando método e solicitando dados 
-		interfaceSistema();
-		int resposta = leia.nextInt();
+		int resposta, condicaoFim = 0;
 		
 		// Estrutura condicional de repetição da interface do programa.
 		do {
 			
+			// Chamando método e solicitando dados 
+						interfaceSistema();
+						resposta = leia.nextInt();
+						
 			// Verificar dados informados pelo usuário. 
 			switch (resposta) {
 			case 1:
@@ -37,18 +38,18 @@ class Main {
 				// Chamando método para pesquisa e impressão de relatório.
 				filtrarRelatorio();
 				break;
+			case 3:
+				System.out.println("\n -- Aplicação Encerrada --");
+				condicaoFim = 1;
+				break;
 			default:
 				// Tela de erro.
 				System.out.println("\n Número informado inválido.");
 				break;
 			}
-			
-			// Chamando método e solicitando dados 
-			interfaceSistema();
-			resposta = leia.nextInt();
 
-		} while (resposta != 3);
-		System.out.println("-- Aplicação Encerrada --");
+		} while (condicaoFim == 0);
+		
 		leia.close();
 	}
 	
@@ -227,9 +228,9 @@ class Main {
 		                   "\n      Termino: " + termino +
 				           "\nAnúncios: " + nomeAnuncios + "\n\n" + 
 				           "        Valor total investido: R$ " + valorTotalInvestido + "\n" +  
-				           "        Maxímo de visualizações: " + maximoVisualizacao + "\n" + 
-				           "        Maxímo de cliques: " + maximoCliques + "\n" + 
-				           "        Maxímo de compartilhamentos: " + maximoCompartilhamento);
+				           "        Máximo de visualizações: " + maximoVisualizacao + "\n" + 
+				           "        Máximo de cliques: " + maximoCliques + "\n" + 
+				           "        Máximo de compartilhamentos: " + maximoCompartilhamento);
 		
 	}
 	
