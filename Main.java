@@ -18,6 +18,8 @@ class Main {
 	public static Anuncio anuncio;
 
 	public static void main(String[] args) {
+		
+		// Variáveis
 		int resposta, condicaoFim = 0;
 		
 		// Estrutura condicional de repetição da interface do programa.
@@ -40,7 +42,10 @@ class Main {
 				break;
 			case 3:
 				System.out.println("\n -- Aplicação Encerrada --");
+				
+				// Condição de saida da Estrutura condicional de repetição. 
 				condicaoFim = 1;
+				
 				break;
 			default:
 				// Tela de erro.
