@@ -185,7 +185,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="https://blog.rocketseat.com.br/author/thiago/">
  <img style="border-radius: 50%;" src="https://i.imgur.com/g7aU166.png?1" width="100px;" alt=""/>
  <br />
- <sub><b>Evert Barros</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">💻</a>
+ <sub><b>Evert Barros</b></sub></a> <a href="https://github.com/EvertBarrosT" title="GitHub">💻</a>
 
 
 Feito com dedicação e esforço por Evert Barros 👋🏽 Entre em contato!
