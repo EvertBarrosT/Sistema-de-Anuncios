@@ -39,7 +39,7 @@ class Main {
 				break;
 			default:
 				// Tela de erro.
-				System.out.println("\nNumero informado inválido.");
+				System.out.println("\n Número informado inválido.");
 				break;
 			}
 			
@@ -74,11 +74,11 @@ class Main {
 		nomeAnuncio = leiaString.nextLine();
 		System.out.println("Informe qual o cliente: ");
 		cliente = leiaString.nextLine();
-		System.out.println("Informe qual a data de início das publicações no formato - dd/mm/aaaa: ");
+		System.out.println("Informe qual a data de início deseja pesquisar no formato - dd/mm/aaaa: ");
 		inicio = leiaString.nextLine();;
-		System.out.println("Informe qual a data do termino das publicações no formato - dd/mm/aaaa: ");
+		System.out.println("Informe qual a data do término deseja pesquisar no formato - dd/mm/aaaa: ");
 		termino = leiaString.nextLine();;
-		System.out.println("Informe qual valor vai investir por dia: ");
+		System.out.println("Informe o valor investido por dia: ");
 		investimentoPorDia = leia.nextDouble();
 		
 		// Declarando um tratamento de exceção.
@@ -96,20 +96,20 @@ class Main {
 			
 			// Verificando o estado da variável.
 			if (condicao) {
-				System.out.println("\nData de termino está maior que data de inicio, gerar novo cadastro.");
+				System.out.println("\n Data de término está maior que data de inicio, realizar novo cadastro.");
 				return null;
 			}
 			
 		} catch (Exception ex) {
 			// Informando na tela que a conversão das datas deram errado. 
-			System.out.println("\nFormato das datas informadas estão inválidos, gerar novo cadastro.");
+			System.out.println("\n Formato das datas informadas estão inválidas, gerar novo cadastro.");
 			return null;
 		}
 		
 		// Instanciando objeto.
 		Anuncio anuncio = new Anuncio(nomeAnuncio, cliente, dataInicio, dataTermino, investimentoPorDia);
 		
-		System.out.println("Cadastro concluido.");
+		System.out.println("\n --- Cadastro concluído ---");
 		
 		// Retornando objeto.
 		return anuncio;
@@ -121,7 +121,7 @@ class Main {
 		// Verificando se houve algum cadastro.
 		if (listaAnuncio.size() == 0) {
 			// Tela de erro.
-			System.out.println("Não possui nenhuma cadastro a ser pesquisado.");
+			System.out.println("Ainda não possui nenhum cadastro, realizar cadastro para que possa gerar relatórios.");
 			return;
 		}
 		
@@ -140,7 +140,7 @@ class Main {
 		nomeCliente = leiaString.nextLine();
 		System.out.println("Informe qual a data de início deseja pesquisar no formato - dd/mm/aaaa: ");
 		inicio = leia.next();
-		System.out.println("Informe qual a data do termino deseja pesquisar no formato - dd/mm/aaaa: ");
+		System.out.println("Informe qual a data do término deseja pesquisar no formato - dd/mm/aaaa: ");
 		termino = leia.next();
 		
 		// Declarando um tratamento de exceção.
@@ -155,13 +155,13 @@ class Main {
 			
 			// Verificando o estado da variável.
 			if (condicao) {
-				System.out.println("\nData de termino está maior que data de inicio, realizar nova pesquisa.");
+				System.out.println("\n Data de termino está maior que data de inicio, realizar nova pesquisa.");
 				return;
 			}
 			
 		} catch (Exception ex) {
 			// Tela de erro.
-			System.out.println("\nFormato das datas informadas estão inválidos, gerar novo cadastro.");
+			System.out.println("\n Formato das datas informadas estão inválidos, gerar novo cadastro.");
 			return;
 		}
 		
@@ -216,7 +216,7 @@ class Main {
 		if (condicao2 == 0) {
 			
 			// Tela de erro
-			System.out.println("Cliente não cadrastrado no sistema.");
+			System.out.println("Cliente não cadastrado no sistema.");
 			return;
 		}
 		
