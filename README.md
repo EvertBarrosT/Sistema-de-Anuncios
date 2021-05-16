@@ -182,7 +182,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Autor
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://github.com/EvertBarrosT">
  <img style="border-radius: 50%;" src="https://i.imgur.com/g7aU166.png?1" width="100px;" alt=""/>
  <br />
  <sub><b>Evert Barros</b></sub></a> <a href="https://github.com/EvertBarrosT" title="GitHub">💻</a>
